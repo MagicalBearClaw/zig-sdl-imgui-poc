@@ -1,0 +1,23 @@
+.{
+    .name = "zig-sdl-test",
+    .version = "0.1.0",
+    .dependencies = .{
+        .sdl2 = .{
+            .url = "https://github.com/libsdl-org/SDL/releases/download/release-2.30.5/SDL2-devel-2.30.5-VC.zip",
+            .hash = "1220482ac65d9c57edf21e74772464ae59015810dcfa99a5f872fcf549facf645737",
+        },
+        .imgui = .{
+            .url = "https://github.com/ocornut/imgui/archive/refs/tags/v1.90.9-docking.tar.gz",
+            .hash = "1220854ebf6bca15874cac634f0c9e39145cc0d13c1cf74822b6ed3073e906a4f8d5",
+        },
+        .imguizmo = .{
+            .url = "https://github.com/CedricGuillemet/ImGuizmo/archive/refs/heads/master.zip",
+            .hash = "12203fc70cae3025e1c6f48f9d52b6a4a8d3bea336963a9d88db543dd09eaccf6036",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
